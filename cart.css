@@ -1,0 +1,42 @@
+body{
+  background-color: rgb(132, 226, 245);
+  font-family: Arial, sans-serif;
+
+}
+header{
+    background-color: rgb(13, 13, 13);
+    color: beige;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cart{
+    padding: 50px;
+    text-align: center;
+    display: block;
+    background-color: beige;
+    flex-wrap: wrap;
+    border-radius: 9px;
+}
+.btn{
+    border-radius: 5px;
+    background-color: black;
+    color: beige;
+}
+#user-display{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-weight: bold;
+    
+ }

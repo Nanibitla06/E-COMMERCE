@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMMERCE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="user-display"></div>
+        <h1>🛍 MyShop</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="products.html">MOBILES</a>
+            <a href="watches.html">WATCHES</a>
+            <a href="laptop.html">LAPTOPS</a>
+            <a href="Cart.html">CART</a>
+        </nav>
+    </header>
+    <section class="section">
+        <div class="mob">
+            <img src="LAPTOP1.webp" width="50px">
+            <p>HP LAPTOP 14</p>
+            <p>$523.5</p>
+            <button onclick="addToCart('HP LAPTOP 14',523.5)">Add to cart</button>
+        </div>
+        <div class="mob">
+            <img src="LAPTOP2.webp" width="50px">
+           <p>APPLE MACBOOK AIR</p>
+            <p>$699.9</p>
+            <button onclick="addToCart('APPLE MACBOOK AIR',590.9)">Add to cart</button>
+        </div>
+        
+        <div CLASS="mob">
+            <img src="LAPTOP3.webp" width="50px">
+           <P>ASUS VIVOBOOK 14</P>
+           <P>$589.8</P>
+           <button onclick="addToCart('ASUS VIVOBOOK 14',699.8)">Add to cart</button>
+        </div>
+    </section>
+    <script>
+        let user = localStorage.getItem("loginUser");
+        if(user){
+            document.getElementById("user-display").innerText = "WELCOME, " + user;
+        
+        }
+    </script>
+<script src="script.js"></script>
+
+</body>

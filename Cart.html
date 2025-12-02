@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMMERCE</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <div id="user-display"></div>
+        <h1>🛍 MyShop</h1>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="products.html">MOBILES</a>
+            <a href="watches.html">WATCHES</a>
+            <a href="laptop.html">LAPTOPS</a>
+            <a href="Cart.html">CART</a>
+        </nav>
+    </header>
+    <section class="cart">
+        <div>
+        <h2>SHOPPING LIST</h2>
+        <div id="cart-items"></div>
+        <p></p>
+           <p></p>
+           <div id="total"></div><br>
+           <button class="btn">BUY</button>
+           </div>
+    </section>
+    <script>
+        let user = localStorage.getItem("loginUser");
+        if(user){
+            document.getElementById("user-display").innerText = "WELCOME, " + user;
+        
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>

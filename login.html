@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+</head>
+<style>
+body{                                                                                                                                                                                                                  
+    background-color:beige;
+}
+.form{
+    background-color: rgb(137, 225, 243);
+    padding: 5px;
+    align-items: center;
+    margin: 50px;
+    border-radius: 35px;
+   padding:50px;
+   padding-bottom: 200px;
+   padding-top: 200px;
+   font-size: larger;
+}
+.submit{
+    border-radius: 5px;
+    margin-top: 50px;
+    
+
+}
+
+
+</style>
+<script>
+    function validate(form){
+        var username=form.t1.value;
+        var password=form.pass1.value;
+        if(username == "Uday" && password == "40098" ){
+            localStorage.setItem("loginUser",username);
+            alert("SUCCESS");
+            return true;
+           
+        }
+        else{
+            alert("INVALID CREDENTIALS");
+            return false;
+           
+        }
+    }
+</script>
+ 
+  <!-- <p id="timer"></p> 
+
+  <script>
+    let timeLeft = 5; 
+    const timerElement = document.getElementById("timer");
+
+    const countdown = setInterval(() => {
+      timeLeft--;
+      //timerElement.textContent = timeLeft;
+
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+        
+        // You can also redirect to another page:
+         window.location.href = "nextpage.html";
+      }
+    }, 1000); 
+  </script> -->
+
+<body>
+<form action="index.html" name="form" onsubmit="return validate(this)">  
+    <center class="form" >
+        <h1>E-Commerce LOGIN</h1>
+        Username:<input type="text" name="t1"><br><br>
+        Password:<input type="password" name="pass1"><br><br>
+        <input class="submit" type="submit" value="Login">
+    </center>
+    </form>
+</body>
+</html>

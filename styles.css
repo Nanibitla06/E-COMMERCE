@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(139, 224, 237);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 0;
+}
+header{
+    background-color: rgb(6, 6, 6);
+    color: beige;
+    display: flex;
+    padding: 15px 20px;
+    align-items: baseline;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+nav a{
+    color: beige;
+    margin: 0px 5px;
+    text-decoration: none;
+    
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: beige;
+    text-align: center;
+    padding:15px ;
+    
+}
+.middle{
+    background-color: beige;
+    padding: 10px;
+    text-align: center;
+    color: rgb(33, 69, 43);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+    border-radius: 10px;
+    margin: 5px;
+}
+.button{
+    padding: 10px;
+    text-align: center;
+    color: beige;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 10px;
+    font-family: fantasy;
+    display: inline-block;
+    margin-top: 10px;
+}
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px 30px;
+    gap:30px;
+    margin: 50px;
+    gap: 60px;
+   
+}
+.mob{
+ background-color: beige;
+    color: rgb(14, 14, 9);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+ button{
+    padding: 5px;
+    background-color: black;
+    color: beige;
+    border-radius: 7px;
+ }
+ .img{
+    border-radius: 10px;
+    background-color: beige;
+ }
+ .cart{
+    text-align: center;
+    background-color: beige;
+    padding: 10px;
+    align-items: center;
+ }
+ .list{
+    background-color: rgb(43, 72, 36);
+    color: bisque;
+    text-align: center;
+    padding: 9px;
+     margin: 50px ; 
+    width: 80%;
+    border-radius: 10px;
+    
+ }
+ .list h2{
+    font-size: x-large;
+    margin-bottom: 25px;
+ }
+ .list ul li{
+    padding: 7px 0;
+    font-size: large;
+ }
+ 
+ .list ul{
+    list-style: none;
+ }
+ #user-display{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-weight: bold;
+    
+ }
